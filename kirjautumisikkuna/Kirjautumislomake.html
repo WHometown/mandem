@@ -7,57 +7,57 @@
              <body>
                  <div>
                         <h1 align="Center">Kirjautumislomake</h1>
-                          
+
                         <form>
                           <label for="Enimi">Nimi:</label><br>
-                          <input type="text" id="Enimi" name="Enimi"><br>
+                          <input type="text" id="enimi" name="Enimi"><br>
 
                           <label for="Enimi">Sähköposti:</label><br>
-                          <input type="text" id="Enimi" name="Enimi"><br>
+                          <input type="text" id="sposti" name="Enimi"><br>
 
                           <label for="Enimi">Salasana:</label><br>
-                          <input type="text" id="Enimi" name="Enimi"><br>
+                          <input type="text" id="salasana" name="Enimi"><br>
 
-                          
+
 
                         </form>
-                        
+
                         <p>Kysymys</p>
 
                         <checkbox>
-                         
+
                           <label class="container">Onko
-                            <input type="checkbox">
+                            <input id="kysymys1" type="radio">
                             <span class="checkmark"></span>
                           </label>
-                          
+
                           <label class="container">Onko
-                            <input type="checkbox">
+                            <input id="kysymys1" type="radio">
                             <span class="checkmark"></span>
                           </label>
-                          
+
                           <label class="container">Onko
-                            <input type="checkbox">
+                            <input id="kysymys1" type="radio">
                             <span class="checkmark"></span>
                           </label>
                         </checkbox>
-                        
+
                         <p>Kysymys 2</p>
 
                         <checkbox>
-                         
+
                           <label class="container">Text
-                            <input type="checkbox">
+                            <input id="kysymys2" type="checkbox">
                             <span class="checkmark"></span>
                           </label>
-                          
+
                           <label class="container">Text
-                            <input type="checkbox">
+                            <input id="kysymys2" type="checkbox">
                             <span class="checkmark"></span>
                           </label>
-                          
+
                           <label class="container">Text
-                            <input type="checkbox">
+                            <input id="kysymys2" type="checkbox">
                             <span class="checkmark"></span>
                           </label>
                         </checkbox>
@@ -65,17 +65,17 @@
                         <p>Palaute kirjautumisikkunasta</p>
 
                         <textBox>
-                          <input type="text" id="Enimi" name="Enimi"><br>
+                          <input type="text" id="palaute" name="Enimi"><br>
                         </textBox>
-                        
+
                         <Nappi>
-                          <button class="Send">Lähettää</button>
-                          <button class="Empty form">Tyhjentää lomakkeen</button>
+                          <button onclick="tarkistus()" id="lahetys"class="Send">Lähettää</button>
+                          <button onclick="tyhjenna()" class="Empty form">Tyhjentää lomakkeen</button>
                         </Nappi>
-   
+
                  </div>
              </body>
 <body>
-  <script src=></script>
+  <script src=koodi.js></script>
 </body>
 </html>
