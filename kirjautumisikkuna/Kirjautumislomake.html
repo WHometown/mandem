@@ -8,7 +8,7 @@
                  <div>
                         <h1 align="Center">Kirjautumislomake</h1>
 
-                        <form>
+                        <form onreset="return tyhjennä()">
                           <label for="Enimi">Nimi:</label><br>
                           <input type="text" id="enimi" name="Enimi"><br>
 
@@ -19,8 +19,8 @@
                           <input type="text" id="salasana" name="Enimi"><br>
 
 
-
                         </form>
+
 
                         <p>Kysymys</p>
 
@@ -70,7 +70,7 @@
 
                         <Nappi>
                           <button onclick="tarkistus()" id="lahetys"class="Send">Lähettää</button>
-                          <button onclick="tyhjenna()" class="Empty form">Tyhjentää lomakkeen</button>
+                          <input type="reset" name="reset" value="Tyhjennä lomake">
                         </Nappi>
 
                  </div>

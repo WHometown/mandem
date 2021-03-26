@@ -53,17 +53,14 @@ if(palauteruutu.length < 15) {
   alert("Sinun pitää kirjoittaa tähän palautekenttään vähintään 15 kirjainta");
   form.palauteruutu.focus();
   return false;
-
-if (document.getElementByClass("Send").onclick) {
-
-  alert("Kiitos kun täytit meidän lomakkeen!")
-}
-//Lomakkeen tyhjennys (ehkä jopa toimii)
-function tyhjenna(lomake) {
-  var clean = lomake.value;
-    if(!confirm("Oletko nyt aivan varma tästä?")) {
-      return false;
-      }
-    }
   }
+//Lomakkeen tyhjennys (en saanu toimimaan)
+function tyhjenna(lomake)
+{
+  var clean = lomake.value;
+  if(!confirm("Oletko varma?"))
+  {
+    return false;
+  }
+}
 }
