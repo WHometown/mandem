@@ -21,7 +21,7 @@ var ehdot = /\S+@\S+/;
     return false;
   }
   //salasanan tarkistus
-if(salasana.length < 5) {
+if(salainensana.length < 5) {
   alert ("Anna kunnollinen salasana");
   form.salainensana.focus();
   return false;
@@ -55,12 +55,12 @@ if(palauteruutu.length < 15) {
   return false;
   }
 //Lomakkeen tyhjennys (en saanu toimimaan)
-function tyhjenna(lomake)
+function tyhjennä(lomake)
 {
   var clean = lomake.value;
   if(!confirm("Oletko varma?"))
   {
     return false;
+    }
   }
-}
 }
