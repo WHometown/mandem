@@ -1,0 +1,32 @@
+body {
+  font-family: Arial;
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+}
+
+form {
+padding-left: 41%;
+}
+
+textarea {
+  width: 320px;
+  height: 120px;
+  font-family: Arial;
+  font-size: 14px;
+}
+
+.tiedot input {
+  width: 320px;
+}
+
+@media only screen and (max-width: 1700px) {
+  h1 {
+    text-align: left;
+  }
+  form {
+    padding-left: 10px;
+  }
+}
