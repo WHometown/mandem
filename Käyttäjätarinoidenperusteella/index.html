@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kirjautumisikkuna</title>
+    <script src="">
+    </script>
+
+
+
+  </head>
+  <body>
+<h1 id="otsikko">Kirjautumisikkuna</h1>
+<p id="kuvaus"></p>
+
+<form class="kyselylomake" id="kyselylomake" action="index.html" method="post">
+<label for="nimi">Nimi:</label><br>
+<input type="text" name="nimi" id="nimisyotto" value=""><br>
+
+<label for="email">Sähköposti:</label><br>
+<input type="email" name="email" id="emailsyotto" value=""><br>
+
+<label for="ika">Anna ikäsi:</label><br>
+<input type="number" name="ika" id="ikasyotot" value=""><br>
+
+<p><div class="dropdown" id="pudotus"></p>
+  <button onclick="" class="dropbtn">Pudotusvalikko</button>
+  <div id="pudotus" class="dropdown-content">
+    <a href=""></a>
+    <a href=""></a>
+    <a href=""></a>
+  </div>
+</div>
+
+<p>Tykkäätkö peleistä?</p>
+
+<label class="container">Kyllä
+  <input name="radio" id="radio" type="radio"><br>
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">En
+  <input name="radio" id="radio" type="radio"><br>
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">En tiedä
+  <input name="radio" id="radio" type="radio"><br>
+  <span class="checkmark"></span>
+</label>
+
+<p>Valitse mitä näistä osaat:</p>
+
+<checkbox>
+
+  <label class="container">Html
+    <input name="checkbox" id="checkbox" type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+
+  <label class="container">css
+    <input name="checkbox" id="checkbox" type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+
+  <label class="container">Javascript
+    <input name="checkbox" id="checkbox" type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+</checkbox>
+
+<textBox>
+<p>Palaute:</p>
+<input type="text" id="palaute" name="palaute">
+</textBox>
+
+
+<p><button type="submit" id="laheta" name="button">Lähetä</button></p>
+</button>
+
+    </form>
+  </body>
+</html>
