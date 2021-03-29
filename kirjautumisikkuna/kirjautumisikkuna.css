@@ -19,6 +19,10 @@ form label {
   font-weight: bold;
 }
 
+checkbox input {
+  float: left;
+}
+
 textarea {
   width: 320px;
   height: 120px;
