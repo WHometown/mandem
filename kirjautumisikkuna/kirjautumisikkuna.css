@@ -7,8 +7,16 @@ h1 {
   font-size: 48px;
 }
 
+p {
+  font-weight: bold;
+}
+
 form {
 padding-left: 41%;
+}
+
+form label {
+  font-weight: bold;
 }
 
 textarea {
