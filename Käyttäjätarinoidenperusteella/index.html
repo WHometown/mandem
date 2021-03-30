@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-  <link rel="stylesheet" href="Index.css">
+<link rel="stylesheet" href="Index.css">
 
     <meta charset="utf-8">
     <title>Kirjautumisikkuna</title>
@@ -17,13 +17,17 @@
 
 <form class="kyselylomake" id="kyselylomake" action="index.html" method="post">
 <label for="nimi">Nimi:</label><br>
-<input type="text" name="nimi" id="nimisyotto" value=""><br>
+<input type="text" placeholder="Username" id="nimisyotto" name="nimi"><br>
+
 
 <label for="email">Sähköposti:</label><br>
-<input type="email" name="email" id="emailsyotto" value=""><br>
+<input type="text" placeholder="Etu.sukunimi@gmai.com" id="emailsyotto" name="email"><br>
+
 
 <label for="ika">Anna ikäsi:</label><br>
-<input type="number" name="ika" id="ikasyotot" value=""><br>
+<input type="number" placeholder="ikäsi" id="ikasyotot" name="ika" value=""><br>
+
+
 
 <p><div class="dropdown" id="pudotus"></p>
   <button onclick="" class="dropbtn">Pudotusvalikko</button>
