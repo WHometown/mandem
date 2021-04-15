@@ -4,29 +4,30 @@
 <title>Laskin</title>
 <link rel="stylesheet" href="">
 </head>
-   
-<script src=""></script>
+
+<script src="koodi.js"></script>
 <body>
    <form>
-        <input type="text" name="Näyttö">
+      <td style="background-color: #ffffff;" colspan="4"><p id="vastaus"></p></td>
         <div class="buttons">
-            <input type="button" id="seven" value="7">
-            <input type="button" id="eight" value="8">
-            <input type="button" id="nine" value="9">
-            <input type="button" id="divide" value="/"><br>
-            <input type="button" id="four" value="4">
-            <input type="button" id="five" value="5">
-            <input type="button" id="six" value="6">
-            <input type="button" id="multi" value="*"><br>
-            <input type="button" id="one" value="1">
-            <input type="button" id="two" value="2">
-            <input type="button" id="three" value="3">
-            <input type="button" id="subs" value="-"><br>
-            <input type="button" id="dot" value=".">
-            <input type="button" id="zero" value="0">
-            <input type="button" id="add" value="+">
-            <input type="button" id="Clear" value="C"><br>
-            <input type="button" id="equal" value="=">
+            <input type="button" id="seven" onclick="munfunktio('7')" value="7">
+            <input type="button" id="eight" onclick="munfunktio('8')" value="8">
+            <input type="button" id="nine"  onclick="munfunktio('9')" value="9">
+            <input type="button" id="divide" onclick="munfunktio('/')" value="/"><br>
+            <input type="button" id="four"  onclick="munfunktio('4')" value="4">
+            <input type="button" id="five"  onclick="munfunktio('5')" value="5">
+            <input type="button" id="six"   onclick="munfunktio('6')" value="6">
+            <input type="button" id="multi" onclick="munfunktio('*')" value="*"><br>
+            <input type="button" id="one"   onclick="munfunktio('1')" value="1">
+            <input type="button" id="two"   onclick="munfunktio('2')" value="2">
+            <input type="button" id="three" onclick="munfunktio('3')" value="3">
+            <input type="button" id="subs"  onclick="munfunktio('-')" value="-"><br>
+            <input type="button" id="dot"   onclick="munfunktio('.')" value=".">
+            <input type="button" id="zero"  onclick="munfunktio('0')" value="0">
+            <input type="button" id="clearall" onclick="clearAll()" value="AC">
+            <input type="button" id="add"   onclick="munfunktio('+')" value="+"><br>
+            <input type="button" id="equal" onclick="laskeminen()" value="=">
+
         </div>
    </form>
 </body>
