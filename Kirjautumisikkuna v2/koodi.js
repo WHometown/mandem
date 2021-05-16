@@ -54,7 +54,7 @@ if(palauteruutu.length < 15) {
   form.palauteruutu.focus();
   return false;
   }
-//Lomakkeen tyhjennys (en saanu toimimaan)
+//Lomakkeen tyhjennys 
 function tyhjennä(lomake)
 {
   var clean = lomake.value;
