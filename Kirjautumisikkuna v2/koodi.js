@@ -1,66 +1,38 @@
-function tarkistus(form) {
-//Määritetään muuttujat ja annetaan niille arvot
-var etunimi = document.getElementById("enimi").value;
-var sähköposti = document.getElementById("sposti").value;
-var salainensana = document.getElementById("salasana").value;
-var palauteruutu = document.getElementById("palaute").value;
-var pallukat = document.getElementById("kysymys1").value;
-var checkboksit = document.getElementById("kysymys2").value;
-//Etunimen tarkistus
-if(etunimi.length < 3) {
-  alert("Anna vähintään 3 merkkinen etunimi");
-    form.etunimi.focus();
-    return false;
-  }
-  //Sähköpostin tarkistus
-var ehdot = /\S+@\S+/;
-  if(!ehdot.test(sähköposti))
-  {
-    alert("Anna kunnon sähköposti");
-    form.sähköposti.focus();
-    return false;
-  }
-  //salasanan tarkistus
-if(salainensana.length < 5) {
-  alert ("Anna kunnollinen salasana");
-  form.salainensana.focus();
-  return false;
-}
-//Radio nappien tarkistus
-var tollanen = false;
-for(var i = 0; i < kysymys1.length; i++) {
-  if(kysymys1[i].checked == true) {
-    tollanen = true;
-  }
-}
-if(tollanen == false) {
-  alert("Et ole valinnut yhtäkään pallukkaa!");
-  return false;
-}
-//checkboksien tarkistus
-var checkbox = false;
-for(var j = 0; j < kysymys2.length; j++) {
-  if(kysymys2[j].checked == true) {
-    checkbox = true;
-  }
-}
-if(checkbox == false) {
-  alert("Et ole valinnut yhtäkään checkboxia")
-  return false;
-}
-//palautekentän tarkistus
-if(palauteruutu.length < 15) {
-  alert("Sinun pitää kirjoittaa tähän palautekenttään vähintään 15 kirjainta");
-  form.palauteruutu.focus();
-  return false;
-  }
-//Lomakkeen tyhjennys 
-function tyhjennä(lomake)
-{
-  var clean = lomake.value;
-  if(!confirm("Oletko varma?"))
-  {
-    return false;
+function OnCLickEvent() {
+  //Otaa id
+  var TextBox1 = document.getElementById("TextBox1");
+  var TextBox2 = document.getElementById("TextBox2");
+  var TextBox3 = document.getElementById("TextBox3");
+  var Button1 = document.getElementById("Button1");
+  var checkbox1 = document.getElementById("checkbox1");
+  //Tämä katsoo jos olet kirjoitanut mitään
+  if (TextBox1.value == "") {
+    alert("Et ole kirjoitanut mitään käyttäjätunnusta");
+  } else if (TextBox2.value == "") {
+    alert("Et ole kirjoitanut mitään Salasanaa");
+  } else if (TextBox3.value == "") {
+    alert("Et ole kirjoitanut mitään Sähköpostia");
+  } else {
+    if (checkbox1.checked == true) {
+      //qe
     }
+    //Radio nappien tarkistus
+    var tollanen = false;
+    for(var i = 0; i < kysymys1.length; i++) {
+      if(kysymys1[i].checked == true) {
+        tollanen = true;
+      }
+    }
+    if(tollanen == false) {
+      alert("Et ole valinnut yhtäkään pallukkaa!");
+      return false;
+    }
+    //palautekentän tarkistus
+    var palauteruutu = document.getElementById("palaute").value;
+    if(palauteruutu.length < 15) {
+      alert("Sinun pitää kirjoittaa tähän palautekenttään vähintään 15 kirjainta");
+      form.palauteruutu.focus();
+      return false;
+      }
   }
 }
