@@ -1,0 +1,61 @@
+</html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <title>Kirjautumislomake</title>
+</head>
+
+<body style="background-color:#D2CBE9">
+
+  <center>
+    <h3>Kirjautumislomake</h3>
+    <form class="" action="index.html" method="post">
+      <table>
+        <tr>
+          <td>Käyttäjätunnus:</td>
+          <td><input type="text" name="" Käyttäjätunnus="" value="" id="TextBox1"></td>
+        </tr>
+        <tr>
+          <td>Salasana:</td>
+          <td> <input type="Salasana" name="" Käyttäjän salasana="" value="" id="TextBox2"></td>
+        </tr>
+        <tr>
+          <td>Sähköposti:</td>
+          <td><input type="sähköposti" name="" sähköposti="" value="" id="TextBox3"></td>
+        </tr>
+        <hr />
+      </table>
+    </form>
+    <input type="button" value="Submit" id="Button1" onclick="OnCLickEvent()">
+    <input type="checkbox" id="checkbox1" name=Checkboxteachercheck>
+
+    <script type="text/javascript">
+      function OnCLickEvent() {
+        //Otaa id
+        var TextBox1 = document.getElementById("TextBox1");
+        var TextBox2 = document.getElementById("TextBox2");
+        var TextBox3 = document.getElementById("TextBox3");
+        var Button1 = document.getElementById("Button1");
+        var checkbox1 = document.getElementById("checkbox1");
+        //Tämä katsoo jos olet kirjoitanut mitään
+        if (TextBox1.value == "") {
+          alert("Et ole kirjoitanut mitään tunnusta");
+        } else if (TextBox2.value == "") {
+          alert("Et ole kirjoitanut mitään Salasana");
+        } else if (TextBox3.value == "") {
+          alert("Et ole kirjoitanut mitään Sähköpostia");
+        } else {
+          if (checkbox1.checked == true) {
+            //qe
+          }
+
+        }
+      }
+    </script>
+
+    <title>Login Form Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</html>
