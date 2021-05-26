@@ -2,7 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <script src="" charset="utf-8"></script>
     <title>Tietovisa</title>
+    <link rel="stylesheet" href="ulkonäkö.css">
   </head>
   <body>
 <div class="">
@@ -10,12 +12,15 @@
 
 <h1>Tervetuloa pelaamaan tietovisaa jonka olemme tehneet!</h1>
 
+<p>Tämä toimii siten että vastaat painamalla pallukkaa vastauksen vieressä ja jos se on oikein niin saat yhden pisteen.
+ Voit saada maksimissaan 12 pistettä, Onnea peliin!</p>
+
   <h3>Kysymys 1</h3>
 
 <p>Mitä ohjelmointikieltä opiskelemme tällä hetkellä?</p>
-<p>a) Javascript <input type="radio" name="nappi" value="v1"> </p>
-<p>b) C++ <input type="radio" name="nappi" value="v2"> </p>
-<p>c) Java <input type="radio" name="nappi" value="v3"> </p>
+<p>a) Javascript <input class="nappula" type="radio" name="nappi" value="v1"> </p>
+<p>b) C++ <input class="nappula" type="radio" name="nappi" value="v2"> </p>
+<p>c) Java <input class="nappula" type="radio" name="nappi" value="v3"> </p>
 
   <h3>Kysymys 2</h3>
 
@@ -99,7 +104,7 @@
 <p>a) Microsoft <input type="radio" name="nappi11" value="v34"></p>
 <p>b) Apple <input type="radio" name="nappi11" value="v35"></p>
 
-
+<button type="button" id="palautus" onclick="" name="button">Oletko valmis palauttamaan?</button>
 
 
 
