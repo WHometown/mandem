@@ -51,3 +51,7 @@ function alusta()
     }
   }
 }
+
+function refresh() {
+  location.reload();
+}
