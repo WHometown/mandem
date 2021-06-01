@@ -1,0 +1,131 @@
+body{
+    background: #f4c4cb;
+}
+
+.nappi1{
+    background: red;
+}
+
+.nappi1:focus{
+    background: blueviolet;
+}
+
+.nappi2{
+    background: blue;
+}
+
+.nappi2:focus{
+    background: yellow;
+}
+
+.nappi3{
+    background: blueviolet;
+}
+
+.nappi3:focus{
+    background: azure;
+}
+
+.nappi4{
+    background: yellow;
+}
+
+.nappi4:focus{
+    background: brown;
+}
+
+.nappi5{
+    background: yellowgreen;
+}
+
+.nappi5:focus{
+    background: bisque;
+}
+
+.nappi6{
+    background: green;
+}
+
+.nappi6:focus{
+    background: violet;
+}
+
+.nappi7{
+    background: pink;
+}
+
+.nappi7:focus{
+    background: buttonhighlight;
+}
+
+.nappi8{
+    background: orange;
+}
+
+.nappi8:focus{
+    background: yellowgreen;
+}
+
+.nappi9{
+    background: orangered;
+}
+
+.nappi9:focus{
+    background: burlywood;
+}
+
+.nappi10{
+    background: brown;
+}
+
+.nappi10:focus{
+    background: black;
+}
+
+.nappi11{
+    background: #f03f6c;
+}
+
+.nappi11:focus{
+    background: #430aaa;
+}
+
+.nappi12{
+    background: #5eb2df;
+}
+
+.nappi12:focus{
+    background: #c53496;
+}
+
+.nappi13{
+    background: #a3a0c3;
+}
+
+.nappi13:focus{
+    background: #b0af29;
+}
+
+.nappi14{
+    background: #9b7377;
+}
+
+.nappi14:focus{
+    background: #d0c7ba;
+}
+
+.nappi15{
+    background: #62a19f;
+}
+
+.nappi15:focus{
+    background: #61f6ec;
+}
+
+.nappi16{
+    background: #f27343;
+}
+
+.nappi16:focus{
+    background: #229de3;
+}
